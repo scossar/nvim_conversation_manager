@@ -96,9 +96,7 @@ while True:
                 break
 
             try:
-                print(f"In the try block:\n{data}")
                 data_dict = json.loads(data)
-                print("After json.loads(data)")
                 filename = data_dict["filename"]
                 conversation_name = Path(filename).stem
                 content = data_dict["content"]
